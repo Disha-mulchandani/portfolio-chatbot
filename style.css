@@ -1,0 +1,147 @@
+/* Base */
+* { box-sizing:border-box; margin:0; padding:0; font-family:'Segoe UI', sans-serif; }
+body { background: linear-gradient(135deg,#0f0f1f,#1a1a2e); color:#fff; overflow-x:hidden; }
+
+/* Hero Section */
+.hero { height:100vh; display:flex; align-items:center; justify-content:center; position:relative; }
+.hero-content {
+  position: relative;
+  z-index:2;
+  text-align:center;
+  padding:50px;
+  border-radius:20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+.hero-content:hover { transform: translateY(-5px); }
+.hero h1 { font-size:3em; background: linear-gradient(90deg,#6a11cb,#2575fc); -webkit-background-clip:text; color:transparent; }
+.hero p { font-size:1.2em; margin:20px 0; }
+.cta-btn {
+  display:inline-block;
+  padding:12px 25px;
+  border-radius:12px;
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+.cta-btn:hover { transform:translateY(-3px); box-shadow:0 5px 15px rgba(0,0,0,0.3); }
+
+/* Particle Background */
+.particles-bg { position:absolute; width:100%; height:100%; top:0; left:0; z-index:1; }
+
+/* Sections */
+section { padding:80px 20px; max-width:1000px; margin:auto; position:relative; }
+h2 { font-size:2.5em; margin-bottom:30px; background: linear-gradient(90deg,#6a11cb,#2575fc); -webkit-background-clip:text; color:transparent; }
+
+/* Glass Cards */
+.glass, .glass-card, .skill-card, .project-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(25px);
+  border-radius:20px;
+  padding:20px;
+  margin:15px 0;
+  border:1px solid rgba(255,255,255,0.2);
+  box-shadow:0 8px 40px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+.glass:hover, .skill-card:hover, .project-card:hover { transform: translateY(-10px); box-shadow:0 15px 50px rgba(0,0,0,0.6); }
+
+/* Skills Grid */
+.skills-container { display:flex; flex-wrap:wrap; gap:15px; }
+.skill-card { flex:1 1 120px; text-align:center; font-weight:bold; cursor:pointer; background: linear-gradient(135deg,#6a11cb,#2575fc); color:white; transition: all 0.3s ease; }
+.skill-card:hover { transform:scale(1.1) rotate(-2deg); }
+
+/* Projects Grid */
+.projects-container { display:flex; flex-wrap:wrap; gap:20px; }
+.project-card { flex:1 1 300px; text-align:center; font-weight:bold; cursor:pointer; }
+
+
+
+
+
+
+.embedded-chat {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.embedded-chat h3 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chat-box {
+  height: 200px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.input-area button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  opacity: 0.9;
+}
+
+.user-msg, .bot-msg {
+  padding: 10px 15px;
+  margin: 8px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-msg {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  align-self: flex-end;
+  color: white;
+  margin-left: auto;
+}
+
+.bot-msg {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  align-self: flex-start;
+}
